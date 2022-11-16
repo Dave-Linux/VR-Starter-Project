@@ -8,7 +8,6 @@ using TMPro;
 public class Joystick_Control : MonoBehaviour
 {
     public Transform JoystickTop;
-    public GameObject Player;
     public GameObject ColliderIndicator;
     public GameObject UpIndicator;
     public GameObject DownIndicator;
@@ -45,14 +44,12 @@ public class Joystick_Control : MonoBehaviour
         {
             forwardBackwardTilt = math.abs(forwardBackwardTilt - 360);
             Debug.Log("Backward: " + forwardBackwardTilt);
-            Player.transform.position = new Vector3((Player.transform.position.x - 1), Player.transform.position.y);
             DownIndicator.GetComponent<Renderer>().material.color = Color.green;
         }
         //Check Forward movement
         else if (forwardBackwardTilt < 74 && forwardBackwardTilt > 5)
         {
             Debug.Log("Forward: " + forwardBackwardTilt);
-            Player.transform.position = new Vector3(( Player.transform.position.x + 1), Player.transform.position.y);
             UpIndicator.GetComponent<Renderer>().material.color = Color.green;
 
         }
