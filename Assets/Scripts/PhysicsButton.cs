@@ -30,6 +30,8 @@ public class PhysicsButton : MonoBehaviour
             Pressed();
         else if (isPressed && GetValue() - threshold <= 0)
             Released();
+        if (transform.localPosition.y > startPosition.y)
+            transform.localPosition = startPosition;
     }
 
     //Returns the  

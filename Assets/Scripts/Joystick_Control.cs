@@ -22,8 +22,6 @@ public class Joystick_Control : MonoBehaviour
 
     private void Start()
     {
-        forwardBackwardTilt = 0;
-        sideToSideTilt = 0;
     }
     // Update is called once per frame
     void Update()
@@ -42,7 +40,7 @@ public class Joystick_Control : MonoBehaviour
         //Check backward movement
         if (forwardBackwardTilt <355 && forwardBackwardTilt > 290)
         {
-            forwardBackwardTilt = math.abs(forwardBackwardTilt - 360);
+            //forwardBackwardTilt = math.abs(forwardBackwardTilt - 360);
             Debug.Log("Backward: " + forwardBackwardTilt);
             DownIndicator.GetComponent<Renderer>().material.color = Color.green;
         }
@@ -56,7 +54,7 @@ public class Joystick_Control : MonoBehaviour
         //Check right movement
         if (sideToSideTilt < 355 && sideToSideTilt > 290)
         {
-            sideToSideTilt = math.abs(sideToSideTilt - 360);
+            //sideToSideTilt = math.abs(sideToSideTilt - 360);
             Debug.Log("Right: " + sideToSideTilt);
             RightIndicator.GetComponent<Renderer>().material.color = Color.green;
 
@@ -69,7 +67,41 @@ public class Joystick_Control : MonoBehaviour
             LeftIndicator.GetComponent<Renderer>().material.color = Color.green;
 
         }
+    }
 
+    public void fourDirectionControl(float xDirection)
+    {
+        //Check backward movement
+        if (xDirection < 355 && xDirection > 290)
+        {
+            //forwardBackwardTilt = math.abs(forwardBackwardTilt - 360);
+            Debug.Log("Backward: " + xDirection);
+            DownIndicator.GetComponent<Renderer>().material.color = Color.green;
+            XValue.text = "X = " + xDirection;
+        }
+        //Check Forward movement
+        else if (xDirection < 74 && xDirection > 5)
+        {
+            Debug.Log("Forward: " + xDirection);
+            UpIndicator.GetComponent<Renderer>().material.color = Color.green;
+            XValue.text = "X = " + xDirection;
+        }
+        //Check right movement
+        /*if (yDirection.y < 355 && yDirection.y > 290)
+        {
+            //sideToSideTilt = math.abs(sideToSideTilt - 360);
+            Debug.Log("Right: " + yDirection.y);
+            RightIndicator.GetComponent<Renderer>().material.color = Color.green;
+
+        }
+        //Check left movement
+        else if (yDirection.y < 74 && yDirection.y > 5)
+        {
+
+            Debug.Log("Left: " + yDirection.y);
+            LeftIndicator.GetComponent<Renderer>().material.color = Color.green;
+
+        }*/
     }
 
     private void OnTriggerStay(Collider other)
