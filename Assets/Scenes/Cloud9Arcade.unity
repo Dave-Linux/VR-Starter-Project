@@ -608,8 +608,8 @@ MonoBehaviour:
 
     A & X Button: Toggle Teleport
 
-    Trigger:
-    Teleoport
+    Grip:
+    Teleport
 
     Grip: Grab objects
 
@@ -935,7 +935,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104584785}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.087, y: 1.646, z: -1.738}
+  m_LocalPosition: {x: 2.09, y: 10.13, z: -0.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5315,12 +5315,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 774746873}
     m_Modifications:
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
@@ -5340,17 +5340,17 @@ PrefabInstance:
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.495107
+      value: -8.122253
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.857
+      value: 4.543604
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1851637
+      value: 0.47110868
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
@@ -5360,17 +5360,17 @@ PrefabInstance:
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
         type: 3}
@@ -5394,6 +5394,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 200c0ea9a6f403d488ef02c84890a1c0, type: 3}
+--- !u!4 &484769974 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8239645768988774738, guid: 200c0ea9a6f403d488ef02c84890a1c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 484769973}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494128893
 GameObject:
   m_ObjectHideFlags: 0
@@ -8861,6 +8867,7 @@ Transform:
   - {fileID: 156186309}
   - {fileID: 406936493}
   - {fileID: 343254942}
+  - {fileID: 484769974}
   m_Father: {fileID: 1927495323}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12664,7 +12671,7 @@ Transform:
   - {fileID: 197942857}
   - {fileID: 1061090971}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1026523975
 GameObject:
@@ -15464,7 +15471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257026031}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 5.947, y: 2.14, z: -1.782}
+  m_LocalPosition: {x: 5.95, y: 10.624001, z: -0.30399978}
   m_LocalScale: {x: 0.3, y: 1, z: 0.58}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -21815,7 +21822,7 @@ Transform:
   - {fileID: 774746873}
   - {fileID: 929608656}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964645613
 GameObject:
